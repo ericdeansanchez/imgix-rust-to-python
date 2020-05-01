@@ -1,0 +1,13 @@
+[package]
+authors = ["Messense Lv <messense@icloud.com>"]
+name = "imgix"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+rayon = "1.0.2"
+pyo3 = {git = "https://github.com/PyO3/pyo3", features = ["extension-module"] }
+
+[lib]
+name = "imgix"
+crate-type = ["cdylib"]
